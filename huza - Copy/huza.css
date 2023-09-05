@@ -1,0 +1,35 @@
+/* CSS Document */
+body{
+background-image:url(animal.jpg);
+width:100%;
+height:45px;
+position:relative;
+}
+.parkbt{
+background:none;
+width:74px;
+height:54px;
+color:#FFFF99;
+display:inline-block;
+}
+.park{
+margin-right:10px;
+position:absolute;
+display:inline-table;
+}
+.parkname{
+display:none;
+color:#FFFFCC;
+width:74px;
+height:54px;
+}
+
+/* Change color of dropdown links on hover */
+.parkname a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.park:hover .parkname {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.park:hover .parkbt {background-color: #3e8e99;}
+

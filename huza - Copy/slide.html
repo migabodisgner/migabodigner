@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* sliding css */
+  .container{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 0px;
+    top: 20px;
+    
+
+}
+@-webkit-keyframes slide_animation{
+    0%{ left: 0px;}
+    10%{ left: 0px;}
+    20%{ left: 1200px;}
+    30%{ left: 1200px;}
+    40%{ left: 2400px;}
+    50%{ left: 2400px;}
+    60%{ left: 1200px;}
+    70%{ left: 1200px;}
+    80%{ left: 0px;}
+    90%{ left: 0px;}
+    100%{ left: 0px;}
+}
+.slide_image{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position:relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+}
+.image-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+.image-container h4{
+    color:aqua;
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-shadow: 1px 1px 2px color( blue) ;
+}
+ 
+    </style>
+
+
+    <div class="container">
+        <div class="slide_image">
+               <div class="image-container">
+                <h4>YOUR MOST WELCOME TO SPELL ACADEMY</h4>
+                  <img src="gishwa.jpg">
+                </div>
+                <div class="image-container">
+                   <h4>YOUR MOST WELCOME TO SPELL ACADEMY</h4>
+                   <img src="bridge.jpg"  >
+                </div>
+              <div class="image-container">
+                <h4>IT'S INCREDIABLE TO JOIN US</h4>
+                <img src="animal.jpg"  >
+              </div>
+          </div>
+    </div>   
+</body>
+</html>
